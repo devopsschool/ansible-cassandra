@@ -6,7 +6,7 @@
     - apt
 
 - apt_repository:
-    repo: deb http://www.apache.org/dist/cassandra/debian 310x main
+    repo: deb http://www.apache.org/dist/cassandra/debian {{ version }} main
     state: present
     filename: 'cassandra'
 
