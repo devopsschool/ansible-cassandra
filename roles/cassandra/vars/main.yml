@@ -1,7 +1,7 @@
 ---
-seeds_var : <seed-ip-1>
-seeds_var2 : <seed-ip-2>
-seeds_var3 : <seed-ip-3>
+# seeds_var : <seed-ip-1>
+# seeds_var2 : <seed-ip-2>
+# seeds_var3 : <seed-ip-3>
 increemental_backup : true
-cluster-name : My Cluster
+# cluster-name : My Cluster
 version : 310x
