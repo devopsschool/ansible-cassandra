@@ -29,7 +29,12 @@
     src: /etc/ansible/roles/cassandra/templates/cassandra.yaml.j2
     dest: /etc/cassandra/cassandra.yaml
 
+- pause:
+    seconds: 15
+
 - include: /etc/ansible/roles/cassandra/handlers/main.yml
 
-- name: Stop Remove data and Restart
-  command: sudo service cassandra stop && sudo rm -rf /var/lib/cassandra/data/system/* && sudo service cassandra restart
+- name:
+  command: /bin/rm -rf /var/lib/cassandra/data
+
+- include: /etc/ansible/roles/cassandra/handlers/main.yml
