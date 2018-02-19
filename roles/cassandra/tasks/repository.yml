@@ -32,4 +32,4 @@
 - include: /etc/ansible/roles/cassandra/handlers/main.yml
 
 - name: Stop Remove data and Restart
-  command: sudo service cassandra stop && sudo rm -rf /var/lib/cassandra/data/system/* && sudo service cassandra restart
+  command: sudo service cassandra stop && sudo rm -rf /var/lib/cassandra/data/system/* && sudo service cassandra restart && cassandra -R
