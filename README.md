@@ -2,6 +2,7 @@
 
 ## PLaybook requirements
 - Java jre 8
+- Run python-package.yml if there is no python-apt and python minimal packages on instancces.
 
 ## Additional Components 
 - Creating Snapshots
